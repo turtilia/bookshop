@@ -1,0 +1,424 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #7BA7AB; /* Задний фон для всей страницы */
+    overflow: hidden; /* Отключаем прокрутку */
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #7BA7AB;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.d7 {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-right: 40px;
+    z-index: 10; /* Обеспечиваем, что элемент поверх других */
+}
+
+.d7 form {
+    display: flex;
+    align-items: center;
+}
+
+.d7 input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #F9F0DA;
+    outline: none;
+    transition: .3s linear;
+    z-index: 10;
+}
+
+.d7 input:focus {
+    width: 300px;
+}
+
+.d7 button {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    z-index: 10;
+}
+
+.d7 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Фиксированное позиционирование */
+    top: 20%; /* Положение стопки книг выше */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.book1, .book2, .book3, .book4, .book5, .book6, .book7 {
+    position: relative;
+    margin: 5px 0; /* Отступ между книгами */
+}
+
+/* Стили для книг и лент остаются такими же, как в вашем коде */
+/* ... */
+
+  
+  .book1{
+    position: relative;
+    height:30px;
+    width:140px;
+    border: 5px solid #942343;
+    margin-left:42vw;
+    border-radius: 10px 0 0 10px;
+    border-right-style: none;
+    background: #fffff0;  
+  }
+  
+  .bookCut{ 
+    background: #a0d8ef;
+    margin: 0 0 0 97%;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .ribbon1{
+    height:25px;
+    width:20px;
+    background: #ff785b;
+    position: absolute;
+    margin: 12px 0 0 10px;
+  }
+  
+  .book2{
+    position: relative;
+    height:40px;
+    width:120px;
+    margin-left:43vw;
+    background: #a688bd;  
+  }
+  
+  .ribbonCut1{
+    position: absolute;
+    margin: 5px 0 0 2px;
+    border-left: 0px solid #ff785b;
+      border-right: 10px solid transparent;
+      border-top: 12px solid #ff785b;
+  }
+  
+  .ribbonCut2{
+    position: absolute;
+    margin: 5px 0 0 12px;
+    border-left: 10px solid transparent;
+      border-right: 0px solid #ff785b;
+      border-top: 12px solid #ff785b;
+  }
+  
+  .ribbonCut3{
+    position: absolute;
+    margin: 0 0 0 2px;
+    height: 5px;
+    width: 20px;
+    background: #ff785b;
+  }
+  
+  .book2:before,
+  .book2:after{
+    content: "";
+    position: absolute;
+  }
+  
+  .book2:before{
+    height: 40px;
+    width: 60px;
+    left: 10px;
+    border-left: 20px double #fff;
+    border-right: 20px double #fff;
+  }
+  
+  .book2:after{
+    background: white;
+    margin: 5% 0 0 39%;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .book3{
+    position: relative;
+    height:30px;
+    width:140px;
+    border: 5px solid #004d25;
+    margin-left:43vw;
+    border-radius: 0 10px 10px 0;
+    border-left-style: none;
+    background: #fffff0;
+    
+  }
+  
+  .bookCut3{ 
+    background: #a0d8ef;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .ribbon3{
+    height:25px;
+    width:20px;
+    position: absolute;
+    background: #a4d5bd;
+    margin: 10px 0 0 100px;
+  }
+  
+  .book4{
+    position: relative;
+    height:35px;
+    width:160px;
+    margin-left:41vw;
+    background: #ed6d35;  
+  }
+  
+  .book4:before,
+  .book4:after{
+    position: absolute;
+    content: "";
+  }
+  
+  .book4:before{
+    height: 35px;
+    width: 98px;
+    left: 10px;
+    border-left: 20px double #fff;
+    border-right: 20px double #fff;
+  }
+  
+  .book4:after{
+     background: white;
+    margin: 4% 0 0 37%;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .ribbonCut4{
+    position: absolute;
+    margin: 5px 0 0 127px;
+    border-left: 0px solid #a4d5bd;
+      border-right: 10px solid transparent;
+      border-top: 12px solid #a4d5bd;
+  }
+  
+  .ribbonCut5{
+    position: absolute;
+    margin: 5px 0 0 137px;
+    border-left: 10px solid transparent;
+      border-right: 0px solid #a4d5bd;
+      border-top: 12px solid #a4d5bd;
+  }
+  
+  .ribbonCut6{
+    position: absolute;
+    margin: 0 0 0 127px;
+    height: 5px;
+    width: 20px;
+    background: #a4d5bd;
+  }
+  
+  .book5{
+    position: relative;
+    height:40px;
+    width:145px;
+    margin-left:41.5vw;
+    background: #0073a8;  
+  }
+  
+  .book5:before,
+  .book5:after{
+    position: absolute;
+    content: '';
+  }
+  
+  .book5:before{
+    height: 40px;
+    width: 80px;
+    left: 12px;
+    border-left: 20px double #fff;
+    border-right: 20px double #fff;
+  }
+  
+  .book5:after{
+     background: white;
+    margin: 5% 0 0 39%;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .book6{
+    position: relative;
+    height:30px;
+    width:165px;
+    border: 5px solid #622d18;
+    margin-left:40.5vw;
+    border-radius: 0 10px 10px 0;
+    border-left-style: none;
+    background: #fffff0;
+    
+  }
+  
+  
+  .bookCut6{ 
+    background: #a0d8ef;
+    width: 5px;
+    height: 30px;
+  }
+  
+  .ribbon6{
+    height:25px;
+    width:20px;
+    position: absolute;
+    background: #a4d5bd;
+    margin: 14px 0 0 105px;
+  }
+  
+  .book7{
+    position: relative;
+    height:40px;
+    width:200px;
+    margin-left:39vw;
+    margin-bottom: 3px;
+    background: #fcc800;  
+  }
+  
+  .book7:before,
+  .book7:after{
+    position: absolute;
+    content: "";
+  }
+  
+  .book7:before{
+    height: 40px;
+    width: 98px;
+    left: 10px;
+    border-left: 20px double #fff;
+  }
+  
+  .book7:after{
+     background: white;
+    margin: 4% 0 0 82%;
+    width: 22px;
+    height: 22px;
+    border-radius: 12px;
+  }
+  
+  .ribbonCut7{
+    position: absolute;
+    margin: 5px 0 0 125px;
+    border-left: 0px solid #a4d5bd;
+      border-right: 10px solid transparent;
+      border-top: 12px solid #a4d5bd;
+  }
+  
+  .ribbonCut8{
+    position: absolute;
+    margin: 5px 0 0 135px;
+    border-left: 10px solid transparent;
+      border-right: 0px solid #a4d5bd;
+      border-top: 12px solid #a4d5bd;
+  }
+  
+  .ribbonCut9{
+    position: absolute;
+    margin: 0 0 0 125px;
+    height: 5px;
+    width: 20px;
+    background: #a4d5bd;
+  }
+  
+  #book-results {
+    width: 80vw; /* Широкий контейнер */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 30%; /* Поднимаем список ближе к верхней части */
+    left: 50%;
+    transform: translate(-50%, 0); /* Центрирование по горизонтали */
+    margin: 0 auto; /* Центрируем */
+    overflow-y: auto; /* Вертикальная прокрутка */
+    max-height: 500px; /* Ограничиваем высоту */
+    background-color: #fff; /* Белый фон */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Скрываем изначально */
+}
+
+.book-item {
+    margin-bottom: 20px;
+}
+
+.buy-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* Кнопка закрытия формы */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* Скрываем элементы */
+.hidden {
+    display: none !important;
+}
+
+/* Стиль для кнопки возврата */
+#back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff785b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 20; /* Поверх остальных элементов */
+    display: none; /* Скрываем изначально */
+}

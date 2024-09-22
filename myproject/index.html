@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <!-- Поисковая строка и стопка книг, которые будут скрываться при поиске -->
+            <div class="initial-view">
+                <div class="d7">
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Искать здесь...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                
+                <!-- Стопка книг -->
+                <div class="books">
+                    <div class="book1">
+                        <div class="ribbon1"></div>
+                        <div class="bookCut"></div>
+                    </div>
+                    <div class="book2">
+                        <div class="ribbonCut1"></div>
+                        <div class="ribbonCut2"></div>
+                        <div class="ribbonCut3"></div>
+                    </div>
+                    <div class="book3">
+                        <div class="ribbon3"></div>
+                        <div class="bookCut3"></div>
+                    </div>
+                    <div class="book4">
+                        <div class="ribbonCut4"></div>
+                        <div class="ribbonCut5"></div>
+                        <div class="ribbonCut6"></div>
+                    </div>
+                    <div class="book5"></div>
+                    <div class="book6">
+                        <div class="ribbon6"></div>
+                        <div class="bookCut6"></div>
+                    </div>
+                    <div class="book7">
+                        <div class="ribbonCut7"></div>
+                        <div class="ribbonCut8"></div>
+                        <div class="ribbonCut9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер для отображения результатов поиска книг -->
+    <div id="book-results"></div>
+
+    <!-- Форма покупки книги (по умолчанию скрыта) -->
+    <div class="buy-form hidden" id="buy-form-container">
+        <span class="close-btn">&times;</span> <!-- Кнопка закрытия -->
+        <h3 id="form-title">Покупка книги</h3>
+        <p id="form-author">Автор</p>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbxiXZ_Swej4VBe7aGazc_Pm9M8m5K4E4MFOcakrIFOfBW8r3SVwxn1om6nszXW8zm-p/exec" id="buy-form">
+            <input type="text" name="name" id="name" placeholder="Имя" required /><br><br>
+            <input type="email" name="email" id="email" placeholder="Почта" required /><br><br>
+            <input type="tel" name="phone" id="phone" placeholder="Телефон" required /><br><br>
+            <input type="text" name="address" id="address" placeholder="Адрес" required /><br><br>
+            <input type="hidden" name="bookTitle" id="book-title" /> <!-- Скрытое поле для названия книги -->
+            <input type="hidden" name="bookAuthor" id="book-author" /> <!-- Скрытое поле для автора книги -->
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <!-- Кнопка возврата на начальную страницу -->
+    <button id="back-btn" class="hidden">Назад</button>
+    
+    <script src="script.js"></script> <!-- Включаем внешний скрипт -->
+</body>
+</html>
