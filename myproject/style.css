@@ -75,7 +75,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed; /* Фиксированное позиционирование */
+    position: relative;
     top: 20%; /* Положение стопки книг выше */
     left: 50%;
     transform: translateX(-50%);
@@ -96,7 +96,7 @@ html, body {
     height:30px;
     width:140px;
     border: 5px solid #942343;
-    margin-left:42vw;
+    margin-left:0;
     border-radius: 10px 0 0 10px;
     border-right-style: none;
     background: #fffff0;  
@@ -121,7 +121,7 @@ html, body {
     position: relative;
     height:40px;
     width:120px;
-    margin-left:43vw;
+    margin-left:0;
     background: #a688bd;  
   }
   
@@ -175,7 +175,7 @@ html, body {
     height:30px;
     width:140px;
     border: 5px solid #004d25;
-    margin-left:43vw;
+    margin-left:0;
     border-radius: 0 10px 10px 0;
     border-left-style: none;
     background: #fffff0;
@@ -200,7 +200,7 @@ html, body {
     position: relative;
     height:35px;
     width:160px;
-    margin-left:41vw;
+    margin-left:0;
     background: #ed6d35;  
   }
   
@@ -253,7 +253,7 @@ html, body {
     position: relative;
     height:40px;
     width:145px;
-    margin-left:41.5vw;
+    margin-left:0;
     background: #0073a8;  
   }
   
@@ -283,7 +283,7 @@ html, body {
     height:30px;
     width:165px;
     border: 5px solid #622d18;
-    margin-left:40.5vw;
+    margin-left:0;
     border-radius: 0 10px 10px 0;
     border-left-style: none;
     background: #fffff0;
@@ -309,7 +309,7 @@ html, body {
     position: relative;
     height:40px;
     width:200px;
-    margin-left:39vw;
+    margin-left:0;
     margin-bottom: 3px;
     background: #fcc800;  
   }
@@ -421,4 +421,5 @@ html, body {
     cursor: pointer;
     z-index: 20; /* Поверх остальных элементов */
     display: none; /* Скрываем изначально */
+
 }
