@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .d7 input {
+        width: 80vw;
+    }
+
+    .d7 input:focus {
+        width: 90vw;
+    }
+
+    .book1, .book2, .book3, .book4, .book5, .book6, .book7 {
+        transform: scale(0.9);
+    }
+}
